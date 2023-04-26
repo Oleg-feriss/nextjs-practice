@@ -28,13 +28,7 @@ const EventItem: FC<EventItemProps> = ({ event }) => {
 
   return (
     <li className={styles.item}>
-      <Image
-        src={'/' + image}
-        alt={title}
-        width={500}
-        height={500}
-        className={styles.image}
-      />
+      <Image src={'/' + image} alt={title} width={500} height={500} priority />
       <div className={styles.content}>
         <div className={styles.summary}>
           <h2>{title}</h2>

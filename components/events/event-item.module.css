@@ -9,9 +9,8 @@
   gap: 1rem;
 }
 
-.image {
+.item img {
   width: 100%;
-  position: relative;
   object-fit: cover;
   height: 10rem;
 }
