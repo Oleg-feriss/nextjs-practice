@@ -9,6 +9,7 @@ import EventContent from '@/components/event-detail/event-content';
 import ErrorAlert from '@/components/ui/error-alert';
 import { getFeaturedEvents, getEventById } from '@/helpers/api-util';
 import { EventData } from '@/types/event.interface';
+import Comments from '@/components/input/comments';
 
 type EventDetailPageProps = {
   event: EventData;
@@ -43,6 +44,7 @@ const EventDetailPage: FC<EventDetailPageProps> = ({ event }) => {
       <EventContent>
         <p>{event.description}</p>
       </EventContent>
+      <Comments eventId={event.id} />
     </Fragment>
   );
 };
